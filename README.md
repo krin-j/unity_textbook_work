@@ -7,3 +7,5 @@
 - Go to console to see results
 ## Ch 6
 - Open `Ch6` Scene
+- Play it
+- Use controls to see functionality
