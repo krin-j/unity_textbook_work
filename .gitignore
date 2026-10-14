@@ -97,3 +97,7 @@ InitTestScene*.unity*
 
 # Auto-generated scenes by play mode tests
 /[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
+
+# Real Stars Skybox cubemaps are ~200 MB each (over GitHub's 100 MB limit) and unused
+/[Aa]ssets/Real Stars Skybox/**/*.cubemap
+/[Aa]ssets/Real Stars Skybox/**/*.cubemap.meta
