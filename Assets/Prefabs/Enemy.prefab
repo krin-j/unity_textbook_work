@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: -4798724144115196015}
   - component: {fileID: 4807196834748258905}
   - component: {fileID: 4781545812001213757}
+  - component: {fileID: 6670055157212707995}
   m_Layer: 9
   m_Name: Enemy
   m_TagString: Untagged
@@ -325,6 +326,20 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &6670055157212707995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3668765693810968916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9782d0200bc3d245adc98a0ec70f235, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particlePrefab: {fileID: 1644820993033706770, guid: 23ecd47d2da32724c8721918c2cd446a,
+    type: 3}
 --- !u!1 &5120037746211905001
 GameObject:
   m_ObjectHideFlags: 0
@@ -512,5 +527,6 @@ MonoBehaviour:
   baseAttackDistance: 5
   playerAttackDistance: 8
   lastShootTime: 0
-  bulletPrefab: {fileID: 6971638676478825636, guid: fc3420d19fddd9f4284e1f8e98f723c6, type: 3}
+  bulletPrefab: {fileID: 6971638676478825636, guid: fc3420d19fddd9f4284e1f8e98f723c6,
+    type: 3}
   fireRate: 1
