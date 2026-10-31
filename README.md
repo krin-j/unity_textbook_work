@@ -32,3 +32,11 @@
 - Select the `Cube` and move the Alpha Clipping Threshold on its material to see it disintegrate
 - The water in the moat uses the `Water` Shader Graph, with scrolling, blended textures, transparency, and moving ripples
 - Select `Plane (1)` and look at `WaterMaterial` to see the water material
+## Ch 11-13
+- Open `11-13` Scene
+- Play it
+- Use controls to move, look, and shoot, same as `Scene10`
+- Look around to see the rain, fire, and waterfall particle effects
+- Enemies use an explosion particle effect when shooting
+- Select the spotlights and light probe groups to inspect the lighting setup
+- Select `PP Volume` to inspect the post-processing settings
