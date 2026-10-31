@@ -101,3 +101,6 @@ InitTestScene*.unity*
 # Real Stars Skybox cubemaps are ~200 MB each (over GitHub's 100 MB limit) and unused
 /[Aa]ssets/Real Stars Skybox/**/*.cubemap
 /[Aa]ssets/Real Stars Skybox/**/*.cubemap.meta
+
+/Assets/Imports/AllSkyFree/
+/Assets/Imports/AllSkyFree.meta

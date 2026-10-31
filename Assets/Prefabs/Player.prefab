@@ -312,6 +312,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 948255576869574642, guid: 285c336236d95434da21c8c69e39fd0c, type: 3}
   shootPoint: {fileID: 1830966916}
+  muzzleEffect: {fileID: 951065652472530965, guid: 23ecd47d2da32724c8721918c2cd446a,
+    type: 3}
 --- !u!114 &1994667347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -383,3 +385,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amount: 100
+  onDeath:
+    m_PersistentCalls:
+      m_Calls: []
