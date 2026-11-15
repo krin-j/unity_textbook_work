@@ -1,4 +1,9 @@
 # Unity Textbook Classwork
+
+Open the project in Unity 2023.2.4f1. To try the latest work, open `Assets/Scenes/11-13.unity` and press Play.
+
+Use WASD or the arrow keys to move, the mouse to turn, and the left mouse button to shoot. In `11-13`, hold the left mouse button for sustained fire and press Escape to pause.
+
 ## Ch 1 & 2
 - Open `Ch2` Scene
 ## Ch 5
@@ -37,6 +42,23 @@
 - Play it
 - Use controls to move, look, and shoot, same as `Scene10`
 - Look around to see the rain, fire, and waterfall particle effects
-- Enemies use an explosion particle effect when shooting
 - Select the spotlights and light probe groups to inspect the lighting setup
 - Select `PP Volume` to inspect the post-processing settings
+
+## Ch 14
+
+- Open `11-13` and press Play to hear the background music, rain, player gunfire, and explosions.
+- Open `Main Mixer` in `Assets/Audio Mixers` to inspect the Music and SFX groups.
+
+## Ch 15
+
+- Play `11-13` to see the player and base health bars, score, ammo, remaining waves, and remaining enemies.
+- Press Escape to open the pause menu. Click Resume to return to the game.
+
+## Ch 17
+
+- Play `11-13` and watch the player and enemies switch between idle, run, and shoot animations. Both robots use the `Player` Animator Controller and its `UpperBodyMask`.
+- Hold the left mouse button to fire from the rifle barrel. Release it to stop firing.
+- In the Hierarchy, select `Main Camera` to see its Cinemachine Brain. `CM vcam1` follows and looks at the player.
+- To preview the dolly route, select `CM vcam2` and click Solo. Change Position on `DollyCart1` to move along `DollyTrack1`. Set Position back to 0 and turn off Solo when you finish.
+- The next section is **Creating cutscenes with Timeline**.

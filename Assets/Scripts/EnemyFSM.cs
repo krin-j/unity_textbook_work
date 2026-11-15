@@ -17,6 +17,7 @@ public class EnemyFSM : MonoBehaviour
     public GameObject bulletPrefab;
     public float fireRate;
     public ParticleSystem muzzleEffect;
+    [SerializeField] private Animator animator;
 
     private void Awake()
     {
@@ -34,6 +35,10 @@ public class EnemyFSM : MonoBehaviour
 
     void GoToBase()
     {
+        if (animator != null)
+        {
+            animator.SetBool("Shooting", false);
+        }
         agent.isStopped = false;
         agent.SetDestination(baseTransform.position);
 
@@ -60,6 +65,10 @@ public class EnemyFSM : MonoBehaviour
 
     void ChasePlayer()
     {
+        if (animator != null)
+        {
+            animator.SetBool("Shooting", false);
+        }
         agent.isStopped = false;
 
         if (sightSensor.detectedObject == null)
@@ -103,8 +112,12 @@ public class EnemyFSM : MonoBehaviour
 
     void Shoot()
     {
+        if (animator != null)
+        {
+            animator.SetBool("Shooting", true);
+        }
         var timeSinceLastShoot = Time.time - lastShootTime;
-        if (timeSinceLastShoot > fireRate)
+        if (timeSinceLastShoot > fireRate && Time.timeScale > 0)
         {
             lastShootTime = Time.time;
             Instantiate(bulletPrefab,
